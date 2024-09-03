@@ -10,6 +10,8 @@ document.getElementById("searchKitty").addEventListener("click", function () {
 
         const kittyContainer = document.getElementById("imgContainer");
         kittyContainer.appendChild(imgElement);
+      } else {
+        alert("Wysttąpił błąd podczas pobierania kociaka");
       }
     })
     .catch((error) => alert("Wystąpił błąd - " + error));
