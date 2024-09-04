@@ -9,6 +9,7 @@ document.getElementById("searchKitty").addEventListener("click", function () {
         imgElement.setAttribute("data-test", "img-kitty");
 
         const kittyContainer = document.getElementById("imgContainer");
+                kittyContainer.innerHTML = "";
         kittyContainer.appendChild(imgElement);
       } else {
         alert("Wysttąpił błąd podczas pobierania kociaka");
